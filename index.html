@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>My page</title>
+
+	<!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+	<!-- Your HTML content goes here -->
+    <div class="wrapper">
+        <h1><a href="#sabine-1">Sabine</a></h1>
+        <a data-fancybox="sabine" href="images/sabine/sabine02.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine02.jpg"></a>
+
+        <div class="hidden">
+            <a data-fancybox="sabine" href="images/sabine/sabine02.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine02.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine03.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine03.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine04.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine04.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine05.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine05.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine01.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine01.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine06.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine06.jpg"></a>
+            <a data-fancybox="sabine" href="images/sabine/sabine07.jpg" data-caption="Bocozelle En Marche Gala - Sabine"><img src="images/sabine/thumbs/sabine07.jpg"></a>
+        </div>
+        <h1>Ricky</h1>
+        <div class="hidden">
+            <a data-fancybox="ricky" href="images/ricky/ricky01.jpg" data-caption="Bocozelle En Marche Gala - ricky"><img src="images/ricky/thumbs/ricky01.jpg"></a>
+            <a data-fancybox="ricky" href="images/ricky/ricky02.jpg" data-caption="Bocozelle En Marche Gala - ricky"><img src="images/ricky/thumbs/ricky02.jpg"></a>
+            <a data-fancybox="ricky" href="images/ricky/ricky03.jpg" data-caption="Bocozelle En Marche Gala - ricky"><img src="images/ricky/thumbs/ricky03.jpg"></a>
+        </div>
+        
+    </div>
+	<!-- JS -->
+	<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script>
+        $("[data-fancybox]").fancybox({
+            buttons: [
+                //"zoom",
+                //"share",
+                //"slideShow",
+                //"fullScreen",
+                "download",
+                "thumbs",
+                "close"
+            ],
+	        thumbs : {
+		        autoStart : true
+            },
+            clickSlide: false,
+            clickContent: false,
+       
+            loop     : true
+        });
+        
+    </script>
+</body>
+</html>
+
